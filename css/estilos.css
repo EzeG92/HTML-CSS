@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+html{
+    font-size: 62,5%;
+    }
+
+.body{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr 0.3fr;
+    grid-template-areas:
+    "header header header header"
+    "main main main main "
+    "destacados destacados destacados destacados"
+    "footer footer footer footer";
+}
+
+.header { 
+    background-color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    grid-area: header;   
+}
+
+.header .menu{
+    flex: 1;
+    padding-left: 420px;
+    padding-top: 70px;
+}
+
+.menu ul li{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.menu ul li a:hover{
+    color: #F95503;
+}
+
+.banner img{
+    width: 1900px;
+}
+
+.main{
+    grid-area: main;
+}
+
+.separador{
+    background-color: #5b5f63;
+    height: 20px;
+    
+}
+
+.separadorDos {
+    background: linear-gradient(to right, #FFB300, #F95503);
+    height: 20px;
+    margin-top: -4px;
+}
+
+.destacados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: destacados;
+}
+
+.destacados img {
+    height: 350px;
+    width: 350px;
+}
+
+.destacadosImg{
+    display: flex;
+    column-gap: 100px;
+}
+.productos-destacados{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.footer {  
+    display: flex;
+    justify-content: space-around;
+    background-color: #5b5f63;
+    grid-area: footer;
+}
+
+.menuFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    margin-top: 30px;
+}
+
+.menuFooter p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navFooter ul{
+    list-style-type: none;
+}
+
+.navFooter ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactoFooter{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 30px;
+}
+
+.contactoFooter a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contactoFooter p{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.redesSociales {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 30px;
+}
+
+.redesSociales p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.redesSociales a{
+    display: flex;
+}
+
+.redesIco{
+    display: flex;
+    column-gap: 20px;
+}
+.logoFooter{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+}
+.logoFooter img{
+    height: 60px;
+}
+
+.btn-whatsapp img{
+    height: 60px;
+    width: auto;
+}
+
+.btn-whatsapp {
+    display:block;
+    width:65px;
+    height:65px;
+    position: fixed;
+    right:35px;
+    bottom:15px;
+
+}
+
+/* Tamaño Tablet */
+
+@media screen and (max-width: 768px){
+
+    .body{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 0.3fr;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "destacados destacados destacados"
+        "footer footer footer";
+    }
+
+    .header{
+        display:flex;
+        grid-area: header;
+    }
+
+    .menu ul{
+        display: flex;
+        column-gap: 80px;
+        margin-left: -200px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        grid-area: main;
+    }
+
+    .separador{
+        width: 1300px;
+    }
+
+    .banner img{
+        width: 1300px;
+    }
+
+    .separadorDos{
+        width: 1300px;
+    }
+
+    .destacados{
+        width: 1300px;
+    }
+
+    .destacados h2{
+        margin-top: -300px;
+    }
+
+    .destacadosImg{
+        margin-top: -250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .destacadosImg img{
+        height: 500px;
+        width: 500px;
+    }
+
+}
+
+.body-productos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.9fr 0.9fr 0.9fr 0.3fr;
+    grid-template-areas:
+    "header header header header"
+    "mainp mainp mainp mainp"
+    "mainp mainp mainp mainp"
+    "mainp mainp mainp mainp"
+    "footer footer footer footer"
+}
+
+.main-productos{
+    display: flex;
+    flex-direction: column;
+    grid-area: mainp;
+}
+
+.categorias{
+    margin: 50px 30px 60px 100px; 
+    height: 200px;
+    width: 1fr;
+}
+
+.categorias ul{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 1.1rem;
+    list-style-type: none;
+}
+
+.categorias ul li:hover{
+    color: #F95503;
+}
+
+.categorias ul h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.imgProductos{
+    margin-left: 400px;
+    margin-top: -260px;
+}
+
+.imgProductos img{
+    height: 250px;
+    width: 250px;
+    margin: 25px 30px;
+}
+
+.masproductos{
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-bottom: 50px;
+}
+
+.masproductos a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.masproductos:hover{
+    color:#F95503;
+}
+
+
+
+
+
+
+
+
+.quienesSomos{
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quienesSomos h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+.introQuienes{
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.tecnicoQuienes{
+    margin: 10px;
+    line-height: 1.5; 
+    font-size: 20px;   
+}
+
+.titulotecnico{
+    font-size: 1.2rem;
+    text-transform: uppercase;   
+}
+
+.garantiaQuienes{
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 20px;    
+}
+
+.tituloGarantia{
+    font-size: 1.2rem;
+    text-transform: uppercase;     
+}
+
+.instagram{
+    height: auto;
+    width: 1900px;
+}
+
+.videoComprar{
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+.pasosCompra{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.contacto{
+    height: 700px;
+}
+.contMapa{
+    height: 700px;
+    width: 700px;
+
+}
+.mapa{
+    height: 600px;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.formulario{
+    margin-left: 1000px;
+    margin-top: -650px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 2; 
+}
+
+
+
