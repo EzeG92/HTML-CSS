@@ -196,73 +196,6 @@ html{
     position: fixed;
     right:35px;
     bottom:15px;
-
-}
-
-/* Tamaño Tablet */
-
-@media screen and (max-width: 768px){
-
-    .body{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.1fr 1fr 1fr 0.3fr;
-        grid-template-areas:
-        "header header header"
-        "main main main"
-        "destacados destacados destacados"
-        "footer footer footer";
-    }
-
-    .header{
-        display:flex;
-        grid-area: header;
-    }
-
-    .menu ul{
-        display: flex;
-        column-gap: 80px;
-        margin-left: -200px;
-    }
-
-    .main{
-        display: flex;
-        flex-direction: column;
-        grid-area: main;
-    }
-
-    .separador{
-        width: 1300px;
-    }
-
-    .banner img{
-        width: 1300px;
-    }
-
-    .separadorDos{
-        width: 1300px;
-    }
-
-    .destacados{
-        width: 1300px;
-    }
-
-    .destacados h2{
-        margin-top: -300px;
-    }
-
-    .destacadosImg{
-        margin-top: -250px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .destacadosImg img{
-        height: 500px;
-        width: 500px;
-    }
-
 }
 
 .body-productos{
@@ -332,13 +265,6 @@ html{
 .masproductos:hover{
     color:#F95503;
 }
-
-
-
-
-
-
-
 
 .quienesSomos{
     margin: 50px;
@@ -422,3 +348,201 @@ html{
 
 
 
+@media screen and (max-width: 425px){
+
+    .body{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.2fr 1fr 0.2fr;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "destacados destacados"
+        "footer footer";
+        width: 425px;
+    }
+
+    .header{
+        display:flex;
+        flex-direction: column;
+        background-color:#5b5f63;
+        width: auto;
+        grid-area: header;
+    }
+
+    .logo{
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+
+    .logo img{
+        height: 80px;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-top: -50px;
+        row-gap: 1px;
+        margin-left: -400px;
+    }
+
+    .menu ul li a{
+        color: white;
+        font-size: 10px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        grid-area: main;
+    }
+
+    .separador{
+        height: 10px;
+        width: 425px;
+        background: linear-gradient(to right, #FFB300, #F95503);
+    }
+
+    .banner img{
+        width: 425px;
+    }
+
+    .separadorDos{
+        height: 10px;
+        width: 425px;
+    }
+
+    .destacados{
+        margin-top: 50px;
+        height: 480px;
+    }
+
+    .destacados h2{
+        font-size: 15px;
+    }
+
+    .destacadosImg{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 10px;
+        row-gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        grid-area: destacados;
+    }
+
+    .destacadosImg img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 80px;
+        width: 425px;
+    }
+
+    .menuFooter{
+        display: none;
+    }
+
+    .contactoFooter{
+        text-align: center;
+    }
+
+    .redesSociales{
+        align-content: center;
+        margin: auto;
+    }
+
+    .redesIco{
+        margin: auto;
+    }
+
+    .logoFooter{
+        margin-top: -80px;
+        height: 200px;
+    }
+
+    .btn-whatsapp{
+        display:block;
+        width:40px;
+        height:40px;
+        position: fixed;
+        right:30px;
+        bottom:40px;
+    }
+
+    .body-productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.3fr;
+        grid-template-areas:
+        "header header"
+        "mainp mainp"
+        "imagenesp imagenesp"
+        "footer footer";
+        width: 425px;
+    }
+
+    .categorias{
+        display: none;
+    }
+
+    .main-productos{;
+        width: auto;
+        grid-area: mainp;
+    }
+
+    .imgProductos{
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+        margin: auto;
+        width: auto;
+        grid-area: imagenesp;
+    }
+
+    .primerBloque{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 70px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .segundoBloque{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 70px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .tercerBloque{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 70px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .masproductos{
+        display: none;
+    }
+
+    .imgProductos img{
+        margin: auto;
+        height: 200px;
+        width: 200px;
+    }
+
+
+}
