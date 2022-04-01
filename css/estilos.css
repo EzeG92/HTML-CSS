@@ -18,19 +18,23 @@ html{
     "footer footer footer footer";
 }
 
-.header { 
-    background-color: white; 
+.logo{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    grid-area: header;   
 }
 
-.header .menu{
-    flex: 1;
-    padding-left: 420px;
-    padding-top: 70px;
+.navegacion { 
+    background-color: white; 
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    grid-area: header;   
+    margin-top: 40px;
+}
+
+.navegacion .menu{
+    margin-bottom: 30px;
 }
 
 .menu ul li{
@@ -52,7 +56,23 @@ html{
 
 .menu ul li a:hover{
     color: #F95503;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.buscar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.btnBuscar{
+    background-color: #5b5f63;
+    color: white;
+}
+
+.btnBuscar:hover{
+    background-color: #F95503;
 }
 
 .banner img{
@@ -365,7 +385,7 @@ html{
 }
 
 
-
+/*
 @media screen and (max-width: 425px){
 
     .body{
@@ -564,3 +584,5 @@ html{
 
 
 }
+*/
+
