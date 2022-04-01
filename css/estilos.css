@@ -7,6 +7,7 @@ html{
     font-size: 62,5%;
     }
 
+/*
 .body{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -17,6 +18,7 @@ html{
     "destacados destacados destacados destacados"
     "footer footer footer footer";
 }
+*/
 
 .logo{
     display: flex;
@@ -64,6 +66,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    padding-right: 40px;
 }
 
 .btnBuscar{
@@ -86,13 +89,11 @@ html{
 .separador{
     background-color: #5b5f63;
     height: 20px;
-    
 }
 
 .separadorDos {
     background: linear-gradient(to right, #FFB300, #F95503);
     height: 20px;
-    margin-top: -4px;
 }
 
 .destacados {
