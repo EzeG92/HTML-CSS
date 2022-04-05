@@ -17,8 +17,7 @@ html{
     background-color: white; 
     display: flex;
     justify-content:space-around;
-    align-items:center;
-    grid-area: header;   
+    align-items:center; 
     margin-top: 40px;
 }
 
@@ -348,15 +347,9 @@ html{
         margin-bottom: 15px;
     }
 
-
-
-
     .menuFooter {
         display: none;
     }
-
-
-
 
     .categorias{
         display: none;
@@ -369,16 +362,13 @@ html{
     }
 
 
-
-
-
-
-
-
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
 
+    .navegacion .menu{
+        display: flex;
+    }
 
 
 }
