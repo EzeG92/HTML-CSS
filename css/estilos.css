@@ -7,19 +7,6 @@ html{
     font-size: 62,5%;
     }
 
-/*
-.body{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.5fr 1fr 0.3fr;
-    grid-template-areas:
-    "header header header header"
-    "main main main main "
-    "destacados destacados destacados destacados"
-    "footer footer footer footer";
-}
-*/
-
 .logo{
     display: flex;
     justify-content: center;
@@ -96,42 +83,32 @@ html{
     height: 20px;
 }
 
-.destacados {
+.titulo-destacados{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    grid-area: destacados;
+    justify-content: center;
 }
 
-.destacados img {
-    height: 350px;
-    width: 350px;
-}
-
-.destacadosImg{
-    display: flex;
-    column-gap: 100px;
-}
-.productos-destacados{
+.titulo-destacados h2{
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
-.footer {  
-    display: flex;
-    justify-content: space-around;
+.destacadosImg img{
+    height: 350px;
+    width: 350px;
+}
+
+.footer { 
     background-color: #5b5f63;
-    grid-area: footer;
 }
 
 .menuFooter{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     row-gap: 10px;
-    margin-top: 30px;
 }
 
 .menuFooter p{
@@ -163,7 +140,6 @@ html{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    margin-top: 30px;
 }
 
 .contactoFooter a{
@@ -184,7 +160,6 @@ html{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    margin-top: 30px;
 }
 
 .redesSociales p{
@@ -212,10 +187,9 @@ html{
     height: 50px;
 }
 
-
 .logoFooter{
     display: flex;
-    flex-direction: column;
+    align-items: center;
     row-gap: 10px;
     justify-content: center;
 }
@@ -237,28 +211,8 @@ html{
     bottom:15px;
 }
 
-.body-productos{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.9fr 0.9fr 0.9fr 0.3fr;
-    grid-template-areas:
-    "header header header header"
-    "mainp mainp mainp mainp"
-    "mainp mainp mainp mainp"
-    "mainp mainp mainp mainp"
-    "footer footer footer footer"
-}
-
-.main-productos{
-    display: flex;
-    flex-direction: column;
-    grid-area: mainp;
-}
-
 .categorias{
-    margin: 50px 30px 60px 100px; 
-    height: 200px;
-    width: 1fr;
+    margin-top: 10px;
 }
 
 .categorias ul{
@@ -277,11 +231,6 @@ html{
     text-transform: uppercase;
 }
 
-.imgProductos{
-    margin-left: 400px;
-    margin-top: -260px;
-}
-
 .imgProductos img{
     height: 250px;
     width: 250px;
@@ -289,9 +238,10 @@ html{
 }
 
 .masproductos{
-    margin-top: 100px;
-    margin-left: 450px;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .masproductos a{
@@ -314,7 +264,6 @@ html{
     font-size: 1.2rem;
     text-transform: uppercase;
 }
-
 
 .introQuienes{
     margin: 10px;
@@ -386,204 +335,50 @@ html{
 }
 
 
-/*
-@media screen and (max-width: 425px){
 
-    .body{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.2fr 1fr 0.2fr;
-        grid-template-areas:
-        "header header"
-        "main main"
-        "destacados destacados"
-        "footer footer";
-        width: 425px;
-    }
-
-    .header{
-        display:flex;
-        flex-direction: column;
-        background-color:#5b5f63;
-        width: auto;
-        grid-area: header;
-    }
-
+@media screen and (max-width: 767px){
+    
     .logo{
-        padding-left: 10px;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
-    .logo img{
-        height: 80px;
-    }
-
-    .menu ul{
+    .buscar{
         display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-        margin-top: -50px;
-        row-gap: 1px;
-        margin-left: -400px;
+        align-items: stretch;
+        margin-bottom: 15px;
     }
 
-    .menu ul li a{
-        color: white;
-        font-size: 10px;
-    }
 
-    .main{
-        display: flex;
-        flex-direction: column;
-        grid-area: main;
-    }
 
-    .separador{
-        height: 10px;
-        width: 425px;
-        background: linear-gradient(to right, #FFB300, #F95503);
-    }
 
-    .banner img{
-        width: 425px;
-    }
-
-    .separadorDos{
-        height: 10px;
-        width: 425px;
-    }
-
-    .destacados{
-        margin-top: 50px;
-        height: 480px;
-    }
-
-    .destacados h2{
-        font-size: 15px;
-    }
-
-    .destacadosImg{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 10px;
-        row-gap: 50px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        grid-area: destacados;
-    }
-
-    .destacadosImg img{
-        height: 200px;
-        width: 200px;
-    }
-
-    .footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 80px;
-        width: 425px;
-    }
-
-    .menuFooter{
+    .menuFooter {
         display: none;
     }
 
-    .contactoFooter{
-        text-align: center;
-    }
 
-    .redesSociales{
-        align-content: center;
-        margin: auto;
-    }
 
-    .redesIco{
-        margin: auto;
-    }
-
-    .logoFooter{
-        margin-top: -80px;
-        height: 200px;
-    }
-
-    .btn-whatsapp{
-        display:block;
-        width:40px;
-        height:40px;
-        position: fixed;
-        right:30px;
-        bottom:40px;
-    }
-
-    .body-productos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.3fr;
-        grid-template-areas:
-        "header header"
-        "mainp mainp"
-        "imagenesp imagenesp"
-        "footer footer";
-        width: 425px;
-    }
 
     .categorias{
         display: none;
     }
 
-    .main-productos{;
-        width: auto;
-        grid-area: mainp;
-    }
-
     .imgProductos{
         display: flex;
-        flex-direction: column;
-        row-gap: 70px;
-        margin: auto;
-        width: auto;
-        grid-area: imagenesp;
-    }
-
-    .primerBloque{
-        display: flex;
         flex-wrap: wrap;
-        row-gap: 70px;
         justify-content: center;
-        margin-top: 50px;
     }
 
-    .segundoBloque{
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 70px;
-        justify-content: center;
-        margin-top: 10px;
-    }
 
-    .tercerBloque{
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 70px;
-        justify-content: center;
-        margin-top: 10px;
-        margin-bottom: 50px;
-    }
 
-    .masproductos{
-        display: none;
-    }
 
-    .imgProductos img{
-        margin: auto;
-        height: 200px;
-        width: 200px;
-    }
+
+
 
 
 }
-*/
 
+@media screen and (max-width: 425px){
+
+
+
+}

@@ -8,39 +8,49 @@
     <title>Bike Machine</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <script src="js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 
-<body class="body-productos">
+<body class="container-fluid">
 
-    <header class="header">
-        <div class="logo">
+    <header class="row">
+        <div class="col-sm-12 col-md-2 logo">
             <a href="index.html"><img src="imagenes/logo_bike.png" alt="logo de la empresa"></a>
         </div>
 
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio </a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="quienes_somos.html">Quienes somos</a></li>
-                    <li><a href="como-comprar.html">Como comprar</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <div class="col-sm-12 col-md-8 navegacion ">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio </a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="quienes_somos.html">Quienes somos</a></li>
+                        <li><a href="como-comprar.html">Como comprar</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
+        <div class="col-sm-12 buscar col-md-2">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success btnBuscar" type="submit">Buscar</button>
+            </form>
+        </div>
     </header>
+
+    <section class="row separador"> 
+        <div class="col-12"></div>
+    </section>
 
     <main class="main-productos">
 
-        <section class="separador"> </section>
-
-        <section class="categorias">
-            <div>
+        <section class="row">
+            <div class="col-md-2 categorias">
                 <ul>
                     <h3>Categorias</h3>
                     <li>Discos</li>
@@ -51,24 +61,29 @@
                     <li>Crossfit</li>
                 </ul>
             </div>
-        </section>
 
-        <section class="imgProductos">
-            <div class="primerBloque">
+            <div class="col-md-10 imgProductos">
                 <img src="imagenes/bumpernaranja.png" alt="disco naranja">
                 <img src="imagenes/bumperazul.png" alt="disco azul">
                 <img src="imagenes/bumperojo.png" alt="disco rojo">
                 <img src="imagenes/bumperverde.png" alt="disco verde">
             </div>
 
-            <div class="segundoBloque">
+        </section>
+
+        <section class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10 imgProductos">
                 <img src="imagenes/pelota-6kg.png" alt="pelota de cuero">
                 <img src="imagenes/bolso15.png" alt="bolso con peso">
                 <img src="imagenes/soganegra.png" alt="soga con peso">
                 <img src="imagenes/barrahex.png" alt="barra hexagonal">
             </div>
+        </section>
 
-            <div class="tercerBloque">
+        <section class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10 imgProductos">
                 <img src="imagenes/banco pecho BM004.png" alt="banco de pecho">
                 <img src="imagenes/banco.png" alt="banco de pecho">
                 <img src="imagenes/scott.png" alt="banco scott">
@@ -76,8 +91,11 @@
             </div>
         </section>
 
-        <section class="masproductos">
-            <a href="productos.html" class="masproductos"> Ver mas productos</a>
+
+        <section class="row masproductos">
+            <div class="col-12">
+                <a href="productos.html" class="masproductos"> Ver mas productos</a>
+            </div>
         </section>
     </main>
 
@@ -87,9 +105,9 @@
         </a>
     </div>
 
-    <footer class="footer">
+    <footer class="row footer">
 
-        <div class="menuFooter">
+        <div class="col-sm-12 col-md-3 menuFooter">
             <p>Navegacion</p>
             <nav class="navFooter">
                 <ul>
@@ -102,14 +120,14 @@
             </nav>
         </div>
 
-        <div class="contactoFooter">
+        <div class="col-sm-12 col-md-3 contactoFooter">
             <a href="contacto.html">CONTACTO</a>
             <p> whatsapp 3416551149</p>
             <p> ventaonline@bikemachine.com.ar </p>
             <p> tucuman 1304 - Rosario</p>
         </div>
 
-        <div class="redesSociales">
+        <div class="col-sm-12 col-md-3 redesSociales">
             <p>REDES SOCIALES</p>
             <section class="redesIco">
                 <a href="https://www.instagram.com/bikemachine.fitness/" target="_blank"> <img src="imagenes/Ig.png"
@@ -119,9 +137,10 @@
             </section>
         </div>
 
-        <div class="logoFooter">
+        <div class="col-sm-12 col-md-3 logoFooter">
             <img src="imagenes/logo_bike.png" alt="logo de la empresa en el footer">
         </div>
+
     </footer>
 
 </body>
