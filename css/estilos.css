@@ -314,8 +314,6 @@ html {
     line-height: 2;
 }
 
-
-
 @media screen and (max-width: 768px) {
 
     .logo {
@@ -387,13 +385,13 @@ html {
         height: 30px;
     }
 
-    .oculto{
+    .oculto {
         display: none;
     }
 
-    .imgProductos img{
+    .imgProductos img {
         height: 220px;
-        width: 220px;  
+        width: 220px;
     }
 
     .imgProductos {
@@ -402,8 +400,6 @@ html {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-
-
 }
 
 @media screen and (max-width: 425px) {
@@ -508,7 +504,7 @@ html {
         justify-content: space-evenly;
     }
 
-    .imgProductos img{
+    .imgProductos img {
         height: 120px;
         width: 120px;
     }
