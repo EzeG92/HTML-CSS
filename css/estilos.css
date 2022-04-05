@@ -1,38 +1,38 @@
-*{
+* {
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
 
-html{
-    font-size: 62,5%;
-    }
+html {
+    font-size: 62, 5%;
+}
 
-.logo{
+.logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.navegacion { 
-    background-color: white; 
+.navegacion {
+    background-color: white;
     display: flex;
-    justify-content:space-around;
-    align-items:center; 
+    justify-content: space-around;
+    align-items: center;
     margin-top: 40px;
 }
 
-.navegacion .menu{
+.navegacion .menu {
     margin-bottom: 30px;
 }
 
-.menu ul li{
+.menu ul li {
     display: inline-block;
     position: relative;
     font-size: 20px;
     padding: 10px;
 }
 
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
@@ -42,37 +42,16 @@ html{
     transition: font-size 1.5s;
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover {
     color: #F95503;
     font-size: 16px;
 }
 
-.buscar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding-right: 40px;
-}
-
-.btnBuscar{
-    background-color: #5b5f63;
-    color: white;
-}
-
-.btnBuscar:hover{
-    background-color: #F95503;
-}
-
-.banner img{
+.banner img {
     width: 1900px;
 }
 
-.main{
-    grid-area: main;
-}
-
-.separador{
+.separador {
     background-color: #5b5f63;
     height: 20px;
 }
@@ -82,27 +61,27 @@ html{
     height: 20px;
 }
 
-.titulo-destacados{
+.titulo-destacados {
     display: flex;
     justify-content: center;
 }
 
-.titulo-destacados h2{
+.titulo-destacados h2 {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
-.destacadosImg img{
+.destacadosImg img {
     height: 350px;
     width: 350px;
 }
 
-.footer { 
+.footer {
     background-color: #5b5f63;
 }
 
-.menuFooter{
+.menuFooter {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -110,18 +89,18 @@ html{
     row-gap: 10px;
 }
 
-.menuFooter p{
+.menuFooter p {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-transform: uppercase;
 }
 
-.navFooter ul{
+.navFooter ul {
     list-style-type: none;
 }
 
-.navFooter ul li a{
+.navFooter ul li a {
     text-decoration: none;
     color: white;
     text-transform: none;
@@ -131,24 +110,24 @@ html{
     transition: font-size 1s;
 }
 
-.navFooter ul li a:hover{
-    font-size:  15px;
+.navFooter ul li a:hover {
+    font-size: 15px;
 }
 
-.contactoFooter{
+.contactoFooter {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-.contactoFooter a{
+.contactoFooter a {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
 
-.contactoFooter p{
+.contactoFooter p {
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -161,148 +140,149 @@ html{
     row-gap: 10px;
 }
 
-.redesSociales p{
+.redesSociales p {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-transform: uppercase;
 }
 
-.redesSociales a{
+.redesSociales a {
     display: flex;
 }
 
-.redesIco{
+.redesIco {
     display: flex;
     column-gap: 20px;
 }
 
-.redesIco img{
+.redesIco img {
     height: 20px;
     transition: height 2s;
 }
 
-.redesIco img:hover{
+.redesIco img:hover {
     height: 50px;
 }
 
-.logoFooter{
+.logoFooter {
     display: flex;
     align-items: center;
     row-gap: 10px;
     justify-content: center;
 }
-.logoFooter img{
+
+.logoFooter img {
     height: 60px;
 }
 
-.btn-whatsapp img{
+.btn-whatsapp img {
     height: 60px;
     width: auto;
 }
 
 .btn-whatsapp {
-    display:block;
-    width:65px;
-    height:65px;
+    display: block;
+    width: 65px;
+    height: 65px;
     position: fixed;
-    right:35px;
-    bottom:15px;
+    right: 35px;
+    bottom: 15px;
 }
 
-.categorias{
-    margin-top: 10px;
+.categorias {
+    margin-top: 50px;
 }
 
-.categorias ul{
+.categorias ul {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2;
     font-size: 1.1rem;
     list-style-type: none;
 }
 
-.categorias ul li:hover{
+.categorias ul li:hover {
     color: #F95503;
 }
 
-.categorias ul h3{
+.categorias ul h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
 }
 
-.imgProductos img{
+.imgProductos img {
     height: 250px;
     width: 250px;
     margin: 25px 30px;
 }
 
-.masproductos{
+.masproductos {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.masproductos a{
+.masproductos a {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.masproductos:hover{
-    color:#F95503;
+.masproductos:hover {
+    color: #F95503;
 }
 
-.quienesSomos{
+.quienesSomos {
     margin: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.quienesSomos h3{
+.quienesSomos h3 {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
-.introQuienes{
+.introQuienes {
     margin: 10px;
     line-height: 1.5;
     font-size: 20px;
 }
 
-.tecnicoQuienes{
-    margin: 10px;
-    line-height: 1.5; 
-    font-size: 20px;   
-}
-
-.titulotecnico{
-    font-size: 1.2rem;
-    text-transform: uppercase;   
-}
-
-.garantiaQuienes{
+.tecnicoQuienes {
     margin: 10px;
     line-height: 1.5;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
-.tituloGarantia{
+.titulotecnico {
     font-size: 1.2rem;
-    text-transform: uppercase;     
+    text-transform: uppercase;
 }
 
-.instagram{
+.garantiaQuienes {
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.tituloGarantia {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.instagram {
     height: auto;
     width: 1900px;
 }
 
-.videoComprar{
+.videoComprar {
     margin-top: 50px;
     margin-left: 500px;
 }
 
-.pasosCompra{
+.pasosCompra {
     margin-top: 50px;
     margin-left: 50px;
     margin-bottom: 50px;
@@ -310,65 +290,227 @@ html{
     line-height: 1.5;
 }
 
-.contacto{
+.contacto {
     height: 700px;
 }
-.contMapa{
+
+.contMapa {
     height: 700px;
     width: 700px;
-
 }
-.mapa{
+
+.mapa {
     height: 600px;
     width: 800px;
     margin-top: 50px;
     margin-left: 50px;
 }
 
-.formulario{
+.formulario {
     margin-left: 1000px;
     margin-top: -650px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    line-height: 2; 
+    line-height: 2;
 }
 
 
 
-@media screen and (max-width: 767px){
-    
-    .logo{
+@media screen and (max-width: 768px) {
+
+    .logo {
+        display: flex;
+        justify-content: center;
         margin-top: 15px;
     }
 
-    .buscar{
-        display: flex;
-        align-items: stretch;
-        margin-bottom: 15px;
+    .navegacion ul li a {
+        font-size: 13px;
+    }
+
+    .titulo-destacados h2 {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .destacadosImg {
+        margin-left: 50px;
+    }
+
+    .destacadosImg img {
+        height: 320px;
+        width: 320px;
+    }
+
+    .categorias {
+        display: none;
     }
 
     .menuFooter {
+        align-items: center;
+        row-gap: 0px;
+        margin-top: 10px;
+    }
+
+    .menuFooter p {
+        font-size: 15px;
+    }
+
+    .navFooter {
+        margin-left: -35px;
+        margin-top: -20px;
+    }
+
+    .contactoFooter a {
+        font-size: 15px;
+    }
+
+    .contactoFooter {
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .contactoFooter p {
+        margin-bottom: 0;
+    }
+
+    .redesSociales {
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .redesSociales p {
+        font-size: 15px;
+    }
+
+    .logoFooter img {
+        height: 30px;
+    }
+
+    .oculto{
         display: none;
     }
 
-    .categorias{
-        display: none;
+    .imgProductos img{
+        height: 220px;
+        width: 220px;  
     }
 
-    .imgProductos{
+    .imgProductos {
+        margin-left: 85px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
 
 }
 
 @media screen and (max-width: 425px) {
-
-    .navegacion .menu{
-        display: flex;
+    .logo img {
+        height: 50px;
+        width: auto;
+        margin-left: 25px;
     }
 
+    .navegacion {
+        height: 220px;
+        margin-top: 10px;
+        margin-bottom: -25px;
+    }
+
+    .navegacion ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navegacion ul li a {
+        font-size: 12px;
+    }
+
+    .separador {
+        height: 5px;
+    }
+
+    .separadorDos {
+        height: 5px;
+    }
+
+    .titulo-destacados h2 {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .destacadosImg {
+        margin-left: 20px;
+    }
+
+    .destacadosImg img {
+        height: 180px;
+        width: 180px;
+    }
+
+    .footer {
+        row-gap: 15px;
+    }
+
+    .menuFooter {
+        display: none;
+    }
+
+    .contactoFooter a {
+        font-size: 15px;
+    }
+
+    .contactoFooter {
+        margin-top: 5px;
+        align-items: center;
+        row-gap: 1px;
+    }
+
+    .contactoFooter p {
+        text-transform: lowercase;
+        margin-bottom: 0;
+    }
+
+    .redesSociales {
+        margin-top: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .redesSociales p {
+        display: none;
+    }
+
+    .logoFooter {
+        margin-bottom: 10px;
+    }
+
+    .logoFooter img {
+        height: 40px;
+        width: auto;
+    }
+
+    .btn-whatsapp {
+        right: 15px;
+    }
+
+    .btn-whatsapp img {
+        height: 50px;
+    }
+
+    .imgProductos {
+        margin-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .imgProductos img{
+        height: 120px;
+        width: 120px;
+    }
 
 }
