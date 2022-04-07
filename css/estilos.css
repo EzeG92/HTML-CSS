@@ -78,7 +78,7 @@ html {
     width: 350px;
 }
 
-.img-thumbnail{
+.img-thumbnail {
     margin-left: 20px;
     border: none;
 }
@@ -94,7 +94,6 @@ html {
     justify-content: center;
     row-gap: 10px;
 }
-
 
 .menuFooter p {
     font-size: 20px;
@@ -226,6 +225,11 @@ html {
     height: 250px;
     width: 250px;
     margin: 25px 30px;
+    transition: transform 1s;
+}
+
+.imgProductos img:hover {
+    transform: scale(1.2);
 }
 
 .masproductos {
@@ -251,7 +255,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.quienesSomos h3{
+.quienesSomos h3 {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -298,7 +302,7 @@ html {
     line-height: 1.5;
 }
 
-.pasosCompra h2{
+.pasosCompra h2 {
     font-size: 25px;
 }
 
@@ -345,24 +349,24 @@ html {
         width: 320px;
     }
 
-    .img-thumbnail{
-        margin-left:-60px;
+    .img-thumbnail {
+        margin-left: -60px;
         border: none;
     }
 
-    .destacadosImg .row{
+    .destacadosImg .row {
         --bs-gutter-x: 0;
     }
 
-    .destacadosImg .row img{
+    .destacadosImg .row img {
         height: auto;
     }
 
-    .imgOculta1 img{
+    .imgOculta1 img {
         display: none;
     }
 
-    .imgOculta2 img{
+    .imgOculta2 img {
         display: none;
     }
 
@@ -475,16 +479,16 @@ html {
         width: 180px;
     }
 
-    .img-thumbnail{
-        margin-left:0;
+    .img-thumbnail {
+        margin-left: 0;
         border: none;
     }
 
-    .imgOculta1 img{
+    .imgOculta1 img {
         display: block;
     }
 
-    .imgOculta2 img{
+    .imgOculta2 img {
         display: block;
     }
 
