@@ -70,11 +70,17 @@ html {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .destacadosImg img {
     height: 350px;
     width: 350px;
+}
+
+.img-thumbnail{
+    margin-left: 20px;
+    border: none;
 }
 
 .footer {
@@ -89,15 +95,19 @@ html {
     row-gap: 10px;
 }
 
+
 .menuFooter p {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 .navFooter ul {
     list-style-type: none;
+    margin-top: -25px;
 }
 
 .navFooter ul li a {
@@ -125,6 +135,7 @@ html {
     text-decoration: none;
     color: white;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .contactoFooter p {
@@ -145,6 +156,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .redesSociales a {
@@ -157,7 +169,7 @@ html {
 }
 
 .redesIco img {
-    height: 20px;
+    height: 30px;
     transition: height 2s;
 }
 
@@ -340,6 +352,27 @@ html {
         width: 320px;
     }
 
+    .img-thumbnail{
+        margin-left:-60px;
+        border: none;
+    }
+
+    .destacadosImg .row{
+        --bs-gutter-x: 0;
+    }
+
+    .destacadosImg .row img{
+        height: auto;
+    }
+
+    .imgOculta1 img{
+        display: none;
+    }
+
+    .imgOculta2 img{
+        display: none;
+    }
+
     .categorias {
         display: none;
     }
@@ -352,11 +385,12 @@ html {
 
     .menuFooter p {
         font-size: 15px;
+        margin-left: 10px;
     }
 
     .navFooter {
         margin-left: -35px;
-        margin-top: -20px;
+        margin-top: 5px;
     }
 
     .contactoFooter a {
@@ -402,6 +436,7 @@ html {
     }
 }
 
+
 @media screen and (max-width: 425px) {
     .logo img {
         height: 50px;
@@ -434,17 +469,30 @@ html {
     }
 
     .titulo-destacados h2 {
-        margin-top: 5px;
-        font-size: 15px;
+        margin-top: 10px;
+        font-size: 12px;
     }
 
     .destacadosImg {
-        margin-left: 20px;
+        margin-left: 15px;
     }
 
     .destacadosImg img {
         height: 180px;
         width: 180px;
+    }
+
+    .img-thumbnail{
+        margin-left:0;
+        border: none;
+    }
+
+    .imgOculta1 img{
+        display: block;
+    }
+
+    .imgOculta2 img{
+        display: block;
     }
 
     .footer {
