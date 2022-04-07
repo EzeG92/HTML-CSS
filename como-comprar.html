@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bike Machine</title>
-    
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="css/estilos.css">
-    
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Machine</title>
 
-<body>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body class="container-fluid">
+
     <header class="row header">
 
         <div class="col-sm-12 col-md-4 logo">
@@ -37,35 +38,42 @@
 
     </header>
 
-    <Main> 
-        <section class="separador"> </section>
 
-        <section>
-            <iframe width="952" height="384" src="https://www.youtube.com/embed/Kqkb4mgqmiw"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen class="videoComprar"> </iframe>
+
+    <Main class="row">
+
+        <div >
+            <section class="col-md-12 separador"> </section>
+        </div>
+
+        <section class="col-md-12 videoComprar">
+            <div class="ratio ratio-21x9">
+                <iframe src="https://www.youtube.com/embed/Kqkb4mgqmiw" title="Comprar de forma segura" allowfullscreen></iframe>
+            </div>
         </section>
 
-        <section class="pasosCompra">
-            <h3>Pasos para realizar la compra</h3>
+        <section class="col-md-12 pasosCompra">
+            <h2>Pasos para realizar la compra</h2>
             <ol>
                 <li>Elegi el producto que quieras comprar.</li>
-                <li>Hace clic en el botón de "Agregar al carrito". Esto agregará el producto a tu carrito y te llevará al
+                <li>Hace clic en el botón de "Agregar al carrito". Esto agregará el producto a tu carrito y te
+                    llevará
+                    al
                     mismo.</li>
                 <li>Podes seguir agregando otros productos al carrito o sino hace clic en "Iniciar Compra".</li>
                 <li>Completa tus datos de contacto y hace clic en "Continuar".</li>
                 <li>En la página de Confirmación de compra podes revisar toda la información. Luego hace clic en
                     "Continuar".</li>
-                <li>Una vez que hayas finalizado, vas a obtener un numero de orden y te va a llegar un mail con el detalle
+                <li>Una vez que hayas finalizado, vas a obtener un numero de orden y te va a llegar un mail con el
+                    detalle
                     de la compra.</li>
-            </ol>            
+            </ol>
         </section>
-    </Main>    
-    
+    </Main>
+
     <div class="btn-whatsapp">
         <a href="https://api.whatsapp.com/send?phone=5493416551149" target="_blank">
-        <img src="imagenes/whatsapp.png" alt="">
+            <img src="imagenes/whatsapp.png" alt="">
         </a>
     </div>
 

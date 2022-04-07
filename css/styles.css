@@ -1,0 +1,15 @@
+h1 {
+  color: red; }
+
+ul {
+  color: white; }
+  ul li {
+    list-style-type: none;
+    padding: 20px; }
+    ul li a {
+      text-decoration: none;
+      color: blue; }
+      ul li a:hover {
+        color: yellow; }
+    ul li:hover {
+      padding: 50px; }

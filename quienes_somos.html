@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bike Machine</title>
-    
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="css/estilos.css">
-    
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Machine</title>
 
-<body>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body class="container-fluid">
+
     <header class="row header">
 
         <div class="col-sm-12 col-md-4 logo">
@@ -37,47 +38,68 @@
 
     </header>
 
-    <main>
-        <section class="separador"> </section>
+    <main class="row">
+        <div class="col-12">
 
-        <section>
-            <div>
-                <img src="imagenes/instagram.jpg" alt="banner instagram" class="instagram">
+            <section class="separador"> </section>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/instagram.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <div class="separadorDos"></div>
-        
-        <section class="quienesSomos">
-            <h3>Quienes somos</h3>
-                <article> 
-                    <p class="introQuienes"> Somos una empresa familiar de una larga trayectoria en la industria metalúrgica que en los años 90´s tomó la
-                        decisión de incorporar productos de su propia importación para ser mayorizados y volcados al publico. Así es
-                        como en la actualidad se autoabastece produciendo e importando sus propios productos y distribuyendo marcas
-                        conocidas a nivel nacional e internacional.
-                        Personal de nuestra empresa visita las distintas exposiciones que se realizan en el país y en el exterior para
-                        de esta manera tomar decisiones acertadas a la hora de elegir los productos que luego serán ofrecidos a nuestros
-                        clientes. Esto requiere una gran inversión y un basto conocimiento que luego se ven reflejados en la calidad de
-                        los productos.
-                        Esta ardua labor solo se consigue con el apoyo de nuestros clientes quienes con su confianza contribuyen en
-                        forma directa a nuestro permanente crecimiento. GRACIAS </p>
+            <div class="separadorDos"></div>
 
-            <h2 class="titulotecnico">SERVICIO TECNICO</h2>
-                    <p class="tecnicoQuienes"> 
-                        Esta conformado por personal especializado en mecánica y electrónica entrenado para reconocer en forma rápida y
-                        eficiente las necesidades de nuestros clientes. Anualmente viaja al exterior donde se capacita y actualiza.
-                    </p>
-                        
-            <h2 class="tituloGarantia">GARANTIA</h2>        
-                    <p class="garantiaQuienes">
-                        Todos los productos poseen garantia en servicio tecnico propio. </p>
-                </article>
-        </section>
+        </div>
+
     </main>
+
+    <section class="row quienesSomos">
+        <div class="col-12">
+            <h3> <strong> Quienes somos </strong></h3>
+            <article>
+                <p class="introQuienes"> Somos una empresa familiar de una larga trayectoria en la industria metalúrgica
+                    que en los años 90´s tomó la
+                    decisión de incorporar productos de su propia importación para ser mayorizados y volcados al
+                    publico. Así es
+                    como en la actualidad se autoabastece produciendo e importando sus propios productos y distribuyendo
+                    marcas
+                    conocidas a nivel nacional e internacional.
+                    Personal de nuestra empresa visita las distintas exposiciones que se realizan en el país y en el
+                    exterior para
+                    de esta manera tomar decisiones acertadas a la hora de elegir los productos que luego serán
+                    ofrecidos a nuestros
+                    clientes. Esto requiere una gran inversión y un basto conocimiento que luego se ven reflejados en la
+                    calidad de
+                    los productos.
+                    Esta ardua labor solo se consigue con el apoyo de nuestros clientes quienes con su confianza
+                    contribuyen en
+                    forma directa a nuestro permanente crecimiento. GRACIAS </p>
+
+                <h2 class="titulotecnico"><strong>SERVICIO TECNICO</strong></h2>
+                <p class="tecnicoQuienes">
+                    Esta conformado por personal especializado en mecánica y electrónica entrenado para reconocer en
+                    forma rápida y
+                    eficiente las necesidades de nuestros clientes. Anualmente viaja al exterior donde se capacita y
+                    actualiza.
+                </p>
+
+                <h2 class="tituloGarantia"><strong>GARANTIA</strong></h2>
+                <p class="garantiaQuienes">
+                    Todos los productos poseen garantia en servicio tecnico propio. </p>
+            </article>
+
+        </div>
+
+    </section>
+
 
     <div class="btn-whatsapp">
         <a href="https://api.whatsapp.com/send?phone=5493416551149" target="_blank">
-        <img src="imagenes/whatsapp.png" alt="">
+            <img src="imagenes/whatsapp.png" alt="">
         </a>
     </div>
 

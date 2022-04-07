@@ -1,0 +1,21 @@
+h1 {
+    color: red;
+}
+
+ul{
+    color: white;
+    li{
+        list-style-type: none;
+        padding: 20px;
+        a{
+            text-decoration: none;
+            color: blue;
+            &:hover{
+                color: yellow;
+            }
+        }
+        &:hover{
+            padding: 50px;
+        }
+    }
+}

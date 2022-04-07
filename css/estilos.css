@@ -251,7 +251,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.quienesSomos h3 {
+.quienesSomos h3{
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -284,46 +284,39 @@ html {
     text-transform: uppercase;
 }
 
-.instagram {
-    height: auto;
-    width: 1900px;
-}
 
 .videoComprar {
-    margin-top: 50px;
-    margin-left: 500px;
+    margin-top: 10px;
 }
 
 .pasosCompra {
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    background: linear-gradient(to right, #FFB300, #F95503);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
-.contacto {
-    height: 700px;
-}
-
-.contMapa {
-    height: 700px;
-    width: 700px;
+.pasosCompra h2{
+    font-size: 25px;
 }
 
 .mapa {
     height: 600px;
-    width: 800px;
+    width: 700px;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
 }
 
 .formulario {
-    margin-left: 1000px;
-    margin-top: -650px;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 768px) {
