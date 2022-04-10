@@ -1,21 +1,38 @@
-h1 {
-    color: red;
+
+@import "variables";
+@import "header";
+@import "destacados";
+@import "footer";
+@import "mediaq";
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-ul{
-    color: white;
-    li{
-        list-style-type: none;
-        padding: 20px;
-        a{
-            text-decoration: none;
-            color: blue;
-            &:hover{
-                color: yellow;
-            }
-        }
-        &:hover{
-            padding: 50px;
-        }
+html {
+    font-size: 62, 5%;
+}
+
+.separador {
+    background-color: #5b5f63;
+    height: 20px;
+}
+
+.separadorDos {
+    background: linear-gradient(to right, #ffb300, #f95503);
+    height: 20px;
+}
+
+.btn-whatsapp {
+    display: block;
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    right: 35px;
+    bottom: 15px;
+    img{
+        height: 60px;
+        width: auto;
     }
 }

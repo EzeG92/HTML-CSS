@@ -1,0 +1,39 @@
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navegacion {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.menu {
+    margin-bottom: 30px;
+    ul {
+        li {
+            display: inline-block;
+            position: relative;
+            font-size: 20px;
+            padding: 10px;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: 700;
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+                transition: font-size 1.5s;
+                &:hover{
+                    color: #f95503;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
