@@ -1,0 +1,118 @@
+.categorias {
+    margin-top: 50px;
+    ul{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 2;
+        font-size: 1.1rem;
+        list-style-type: none;
+        &:hover{
+            color: $color2;
+        }
+        h3{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.imgProductos {
+    img{
+        height: 250px;
+        width: 250px;
+        margin: 25px 30px;
+        transition: transform 1s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.masproductos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &:hover{
+        color: $color2;
+    }
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color4;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.quienesSomos {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    h3{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+}
+
+.introQuienes {
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.tecnicoQuienes {
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.titulotecnico {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.garantiaQuienes {
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.tituloGarantia {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.videoComprar {
+    margin-top: 10px;
+}
+
+.pasosCompra {
+    background: linear-gradient(to right, #ffb300, $color2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    h2{
+        font-size: 25px;
+    }
+}
+
+.mapa {
+    height: 600px;
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.formulario {
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+

@@ -2,8 +2,10 @@
 @import "variables";
 @import "header";
 @import "destacados";
+@import "contenido-paginas";
 @import "footer";
 @import "mediaq";
+
 
 * {
     margin: 0;
@@ -15,12 +17,12 @@ html {
 }
 
 .separador {
-    background-color: #5b5f63;
+    background-color: $color3;
     height: 20px;
 }
 
 .separadorDos {
-    background: linear-gradient(to right, #ffb300, #f95503);
+    background: linear-gradient(to right, #ffb300, $color2);
     height: 20px;
 }
 
