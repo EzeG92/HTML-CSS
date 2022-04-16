@@ -22,7 +22,7 @@
       text-transform: uppercase;
       font-size: 15px;
       font-weight: 700;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Open Sans", sans-serif;
       color: black;
       transition: font-size 1.5s; }
       .menu ul li a:hover {
@@ -34,7 +34,7 @@
   justify-content: center; }
   .titulo-destacados h2 {
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     margin-top: 10px; }
 
@@ -49,11 +49,11 @@
 .categorias {
   margin-top: 50px; }
   .categorias ul {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 2;
     font-size: 1.1rem;
     list-style-type: none; }
-    .categorias ul:hover {
+    .categorias ul li:hover {
       color: #f95503; }
     .categorias ul h3 {
       font-size: 1.5rem;
@@ -78,11 +78,11 @@
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-family: Arial, Helvetica, sans-serif; }
+    font-family: "Open Sans", sans-serif; }
 
 .quienesSomos {
   margin: 50px;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans", sans-serif; }
   .quienesSomos h3 {
     font-size: 1.2rem;
     text-transform: uppercase; }
@@ -118,7 +118,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5; }
   .pasosCompra h2 {
     font-size: 25px; }
@@ -134,7 +134,7 @@
   margin-left: 40px;
   margin-top: 50px;
   margin-bottom: 50px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   line-height: 1.5; }
 
@@ -149,7 +149,7 @@
   row-gap: 10px; }
   .menuFooter p {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: white;
     text-transform: uppercase;
     margin-left: 30px;
@@ -164,7 +164,7 @@
     text-transform: none;
     text-transform: uppercase;
     font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     transition: font-size 1s; }
     .navFooter ul li a:hover {
       font-size: 15px; }
@@ -174,14 +174,10 @@
   flex-direction: column;
   row-gap: 10px; }
   .contactoFooter a {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin-top: 10px; }
+    text-decoration: none; }
   .contactoFooter p {
     font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: white;
     text-transform: uppercase; }
 
@@ -190,11 +186,7 @@
   flex-direction: column;
   row-gap: 10px; }
   .redesSociales p {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-transform: uppercase;
-    margin-top: 10px; }
+    text-transform: uppercase; }
   .redesSociales a {
     display: flex; }
 
@@ -374,3 +366,9 @@ html {
   .btn-whatsapp img {
     height: 60px;
     width: auto; }
+
+.estiloFooter, .contactoFooter a, .redesSociales p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px; }

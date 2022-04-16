@@ -1,3 +1,5 @@
+@import "mixin";
+
 @media screen and (max-width: 768px) {
     .logo {
         display: flex;
@@ -25,8 +27,7 @@
     .destacadosImg {
         margin-left: 50px;
         img{
-            height: 320px;
-            width: 320px;
+            @include sizes(320px, 320px);
         }
     }
 
@@ -111,8 +112,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         img{
-            height: 220px;
-            width: 220px;
+            @include sizes(220px, 220px);
         }
     }
 }
@@ -120,8 +120,7 @@
 @media screen and (max-width: 425px) {
     .logo {
         img{
-            height: 50px;
-            width: auto;
+            @include sizes(auto, 50px);
             margin-left: 25px;
         }
     }
@@ -160,8 +159,7 @@
     .destacadosImg {
         margin-left: 15px;
         img{
-            height: 180px;
-            width: 180px;
+            @include sizes(180px, 180px);
         }
     }
 
@@ -216,8 +214,7 @@
     .logoFooter {
         margin-bottom: 10px;
         img{
-            height: 40px;
-            width: auto;
+            @include sizes(auto, 40px);
         }
     }
 
@@ -234,8 +231,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         img{
-            height: 120px;
-            width: 120px;
+            @include sizes(120px, 120px);
         }
     }
 }

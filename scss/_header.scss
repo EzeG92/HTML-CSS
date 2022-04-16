@@ -5,7 +5,7 @@
 }
 
 .navegacion {
-    background-color: $color1;
+    background-color: map-get($estilos, color1);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,11 +25,11 @@
                 text-transform: uppercase;
                 font-size: 15px;
                 font-weight: 700;
-                font-family: Arial, Helvetica, sans-serif;
-                color: $color4;
+                font-family: $fuente;
+                color: map-get($estilos, color4);
                 transition: font-size 1.5s;
                 &:hover{
-                    color: $color2;
+                    color: map-get($estilos, color2);
                     font-size: 16px;
                 }
             }

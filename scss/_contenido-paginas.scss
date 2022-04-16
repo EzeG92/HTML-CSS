@@ -1,12 +1,16 @@
+@import "mixin";
+
 .categorias {
     margin-top: 50px;
     ul{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $fuente;
         line-height: 2;
         font-size: 1.1rem;
         list-style-type: none;
-        &:hover{
-            color: $color2;
+        li{
+            &:hover{
+                color: map-get($estilos, color2);
+            }
         }
         h3{
             font-size: 1.5rem;
@@ -17,8 +21,7 @@
 
 .imgProductos {
     img{
-        height: 250px;
-        width: 250px;
+        @include sizes(250px, 250px);
         margin: 25px 30px;
         transition: transform 1s;
         &:hover{
@@ -33,19 +36,19 @@
     margin-top: 10px;
     margin-bottom: 10px;
     &:hover{
-        color: $color2;
+        color: map-get($estilos, color2);
     }
     a{
         text-decoration: none;
         text-transform: uppercase;
-        color: $color4;
-        font-family: Arial, Helvetica, sans-serif;
+        color: map-get($estilos, color4);
+        font-family: $fuente;
     }
 }
 
 .quienesSomos {
     margin: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $fuente;
     h3{
         font-size: 1.2rem;
         text-transform: uppercase;
@@ -85,11 +88,11 @@
 }
 
 .pasosCompra {
-    background: linear-gradient(to right, #ffb300, $color2);
+    background: linear-gradient(to right, #ffb300, map-get($estilos, color2));
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $fuente;
     line-height: 1.5;
     h2{
         font-size: 25px;
@@ -97,8 +100,7 @@
 }
 
 .mapa {
-    height: 600px;
-    width: 700px;
+    @include sizes(700px, 600px);
     margin-top: 50px;
     margin-left: 100px;
     margin-bottom: 50px;
@@ -108,7 +110,7 @@
     margin-left: 40px;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $fuente;
     font-size: 15px;
     line-height: 1.5;
 }

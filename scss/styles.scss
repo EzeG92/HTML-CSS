@@ -5,6 +5,7 @@
 @import "contenido-paginas";
 @import "footer";
 @import "mediaq";
+@import "mixin";
 
 
 * {
@@ -17,12 +18,12 @@ html {
 }
 
 .separador {
-    background-color: $color3;
+    background-color: map-get($estilos, color3);
     height: 20px;
 }
 
 .separadorDos {
-    background: linear-gradient(to right, #ffb300, $color2);
+    background: linear-gradient(to right, #ffb300, map-get($estilos, color2));
     height: 20px;
 }
 
@@ -38,3 +39,15 @@ html {
         width: auto;
     }
 }
+
+.estiloFooter {
+    font-family: $fuente;
+    color: map-get($estilos, color1);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+
