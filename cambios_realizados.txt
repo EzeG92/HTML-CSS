@@ -1,0 +1,11 @@
+Se creo variable Fuente insertando google fonts en todas las paginas y utilizando esa variable.
+
+Se creo mapa de estilo con 4 colores utilizando get map en cada lugar donde iba un color.
+
+Se agrego un extend en el footer compartiendo para los estilos de los textos.
+
+Se creo pagina de mixin, se importo la pagina en diferentes pagina scss para utilizar el @include, por ejemplo en la mediaq
+
+Se agrego titulo, keywords y descripcion en todas las paginas.
+
+
