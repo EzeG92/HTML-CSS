@@ -1,10 +1,42 @@
 @import "mixin";
 
+@media screen and (max-width: 1024px) {
+    .logo {
+        img{
+            @include sizes (150px, auto);
+        }
+    }
+
+    .img-thumbnail {
+        margin-left: -5px;
+        border: none;
+    }
+
+    .destacadosImg{
+        .row{
+            --bs-gutter-x: 0;
+            img{
+                height: auto;
+            }
+        }
+    } 
+
+    .mapa{
+        margin-left: 15px;
+        width: 500px;
+    }
+
+    .formulario{
+        margin-left: 100px;
+    }
+}    
+
 @media screen and (max-width: 768px) {
     .logo {
         display: flex;
         justify-content: center;
         margin-top: 15px;
+        @include sizes (250px, auto);
     }
 
     .navegacion {
@@ -115,14 +147,42 @@
             @include sizes(220px, 220px);
         }
     }
+
+    .mapa{
+        margin-top: 15px;
+        margin-left: 15px;
+        width: 700px;
+        height: 300px;
+    }
+
+    .contacto{
+        column-gap: 5px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        margin-top: 5px;
+        margin-left: 35px;
+    }
+
+    .enviar{
+        margin-top: 15px;
+    }
+
+    .resetear{
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 425px) {
     .logo {
         img{
             @include sizes(auto, 50px);
-            margin-left: 25px;
+            margin-left: 200px;
         }
+        ;
     }
 
     .navegacion {
@@ -233,5 +293,20 @@
         img{
             @include sizes(120px, 120px);
         }
+    }
+
+    .mapa{
+        margin-top: 15px;
+        margin-left: 15px;
+        width: 380px;
+        height: 300px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 5px;
+        margin-left: 35px;
     }
 }

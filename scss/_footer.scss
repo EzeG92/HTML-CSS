@@ -54,14 +54,13 @@
         font-family: $fuente;
         color: map-get($estilos, color1);
         text-transform: uppercase;
-
+        margin-bottom: 0;
     }
 }
 
 .redesSociales {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
     p{
         @extend .estiloFooter;
         text-transform: uppercase;
@@ -77,10 +76,6 @@
     column-gap: 20px;
     img{
         height: 30px;
-        transition: height 2s;
-        &:hover{
-            height: 50px;
-        }
     }
 }
 
