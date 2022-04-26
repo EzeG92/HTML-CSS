@@ -17,6 +17,10 @@ html {
     font-size: 62, 5%;
 }
 
+.col-12 {
+    padding: 0px;
+}
+
 .separador {
     background-color: map-get($estilos, color3);
     height: 20px;
@@ -46,6 +50,7 @@ html {
     font-size: 20px;
     margin-top: 10px;
 }
+
 
 
 

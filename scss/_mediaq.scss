@@ -205,6 +205,7 @@
         height: 5px;
     }
 
+
     .separadorDos {
         height: 5px;
     }
@@ -293,6 +294,10 @@
         img{
             @include sizes(120px, 120px);
         }
+    }
+
+    main.main-productos {
+        padding: 10px;
     }
 
     .mapa{
